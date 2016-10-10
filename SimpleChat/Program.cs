@@ -16,7 +16,7 @@ namespace SimpleChat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GeekChat());
+            Application.Run(new loginForm());
         }
     }
 }

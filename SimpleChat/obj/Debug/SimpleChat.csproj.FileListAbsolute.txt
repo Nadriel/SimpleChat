@@ -21,3 +21,6 @@ C:\Users\kordonis\Tests\SimpleChat\SimpleChat\bin\Debug\aa\SimpleChat.resources.
 C:\Users\kordonis\Tests\SimpleChat\SimpleChat\obj\Debug\SimpleChat.GeekChat.resources
 C:\Users\kordonis\Tests\SimpleChat\SimpleChat\obj\Debug\SimpleChat.GeekChat.aa.resources
 C:\Users\kordonis\Tests\SimpleChat\SimpleChat\obj\Debug\aa\SimpleChat.resources.dll
+C:\Users\kordonis\Tests\SimpleChat\SimpleChat\obj\Debug\SimpleChat.csprojResolveAssemblyReference.cache
+C:\Users\kordonis\Tests\SimpleChat\SimpleChat\obj\Debug\SimpleChat.serversideForm.resources
+C:\Users\kordonis\Tests\SimpleChat\SimpleChat\obj\Debug\SimpleChat.loginForm.resources

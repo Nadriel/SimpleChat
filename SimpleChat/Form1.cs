@@ -133,7 +133,10 @@ namespace SimpleChat
 
         private void textBoxSend_TextChanged(object sender, EventArgs e)
         {
-
+            var fileStream = File.Create("C:\\Path\\To\\File");
+            myOtherObject.InputStream.Seek(0, SeekOrigin.Begin);
+            myOtherObject.InputStream.CopyTo(fileStream);
+            fileStream.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -147,6 +150,11 @@ namespace SimpleChat
                 MessageBox.Show(ex.ToString());
             }
 
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void sendButton_Click(object sender, EventArgs e)

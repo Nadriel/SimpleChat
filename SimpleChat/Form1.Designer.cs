@@ -44,6 +44,7 @@
             this.buttonConnect = new System.Windows.Forms.Button();
             this.sendButton = new System.Windows.Forms.Button();
             this.attacth = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.groupBoxClient1.SuspendLayout();
             this.groupBoxClient2.SuspendLayout();
             this.SuspendLayout();
@@ -149,10 +150,18 @@
             this.attacth.UseVisualStyleBackColor = true;
             this.attacth.Click += new System.EventHandler(this.button2_Click);
             // 
+            // exitButton
+            // 
+            resources.ApplyResources(this.exitButton, "exitButton");
+            this.exitButton.Name = "exitButton";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // GeekChat
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.attacth);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.buttonConnect);
@@ -187,6 +196,7 @@
         private System.Windows.Forms.Button buttonConnect;
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.Button attacth;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
