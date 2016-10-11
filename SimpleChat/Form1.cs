@@ -11,7 +11,8 @@ using System.Windows.Forms;
 //Imported Name Spaces: will be used to connect to each other
 using System.Net;
 using System.Net.Sockets;
-
+using System.Diagnostics;
+using System.IO;
 
 namespace SimpleChat
 {
@@ -139,10 +140,30 @@ namespace SimpleChat
             //fileStream.Close();
         }
 
+        
         private void button2_Click(object sender, EventArgs e)
         {
             try
             {
+                //try to send file as an attachement
+                
+                // suppose that we have a test.txt at C:\
+                string filePath = @"C:\test.txt";
+                if (!File.Exists(filePath))
+                {
+                    return;
+                }
+
+                // combine the arguments together
+                // it doesn't matter if there is a space after ','
+                string argument = "/select, \"" + filePath + "\"";
+
+                Process.Start("explorer.exe", argument);
+                //var fileStream = File.Create("C:\\Path\\To\\File");
+                //myOtherObject.InputStream.Seek(0, SeekOrigin.Begin);
+                //myOtherObject.InputStream.CopyTo(fileStream);
+                //fileStream.Close();
+
 
             }
             catch (Exception ex)

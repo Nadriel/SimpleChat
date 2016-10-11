@@ -33,9 +33,21 @@ namespace SimpleChat
             
         }
 
+        //connect to the application by pressing the enter key -- actually trigger the connectButtonClick method
+        private void passwordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //MessageBox.Show("enter key pressed"); used to see if it gets into the if clause
+                connectButton_Click(this, new EventArgs());
+            }
+        }
+
         private void exitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
+
+        
     }
 }
